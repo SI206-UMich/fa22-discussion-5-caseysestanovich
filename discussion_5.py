@@ -102,7 +102,7 @@ class TestAllMethods(unittest.TestCase):
 
 	# Check to see whether the warehouse correctly return the item with the highest price
 	def test_warehouse_max_price(self):
-		items = [self.item1, self.item2, self.item3]
+		items = [self.item1, self.item2, self.item3, self.item4, self.item5]
 		ware = Warehouse(items)
 		self.assertEqual(ware.get_max_price(), self.item1)
 		
